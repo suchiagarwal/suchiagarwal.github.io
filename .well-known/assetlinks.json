@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.launch.sucagarw.suchilaunchapp",
+    "sha256_cert_fingerprints":
+    ["A2:D1:D4:7E:87:21:4C:38:67:3E:0D:52:56:65:95:D3:67:1A:E0:12:A3:57:AA:13:23:5D:B5:95:33:EC:C2:5E"]
+  }
+}]
