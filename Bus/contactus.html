@@ -1,0 +1,130 @@
+<!-- Header & Footer contained in template: Templates > Main Template.html -->
+
+<!--
+    This page uses modules. 
+    For a complete list of modules explained please visit
+    http://helpx.adobe.com/business-catalyst/kb/modules-quick-reference.html
+-->
+
+<div class="center over_all_under">
+	<div class="center breadcrumb">
+		<p><a href="/home">Home</a> / Contacts</p>
+	</div>
+</div>
+<!-- close .center over_all_under -->
+
+<div class="wrap_fullwidth big_padding" id="intro">
+	<div class="center">
+		<h2 class="page_title line_back_ground">Contacts Us</h2>
+		<p class="slogan one_line">This is a 'Contact Us' page</p>
+	</div>
+</div>
+<!-- close .wrap_fullwidth big_padding -->
+
+<div style="clear: both"></div>
+
+<div id="main" class="wrap_fullwidth">
+	<div class="center">
+		<div id="contacts" class="box_two_third">
+			
+			<div class="box_one_third">
+				<h2 class="label">Contact info</h2>
+				<p>The form to your underneath is a "Contact Us" form. Whenever somebody fills it out, it will create a 'contact' record and a 'case' for you inside your system. To access this details of the contact or the case you will need to log in to your Admin Console and go to 'Customers &gt; Cases'</p>
+				<p>To change the form i.e add some more fields to collect extra information you will need to go to 'Modules &gt; Webforms' where you will find the
+'Contact Form'. You can edit it and once you're finished, you will need to re-insert the form onto the 'Contact Page' to see the update</p>
+				<br/>
+			</div>
+			<!-- close .box_one_third -->
+
+			<div class="box_one_third last">			
+				<ul class="arrows_list">
+					<li><span>Your Company Name</span></li>
+					<li><span>Lorem ipsum dolor sit</span></li>
+					<li><span>Switzerland</span></li>
+					<li><span>T. 0041 123 456 789</span></li>
+					<li><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></li>
+				</ul>
+			</div>
+			<!-- close .box_one_third -->
+
+			<div style="clear: both"></div>
+
+			<div id="form" class="entry">
+				<div>
+					<h3 class="label border_bottom">Send Us An Email</h3>
+				</div>
+
+				<form action="/FormProcessv2.aspx?WebFormID=31450&amp;OID={module_oid}&amp;OTYPE={module_otype}&amp;EID={module_eid}&amp;CID={module_cid}" enctype="multipart/form-data" onsubmit="return checkWholeForm56321(this)" method="post" name="catwebformform56321" id="contact_form">
+					<fieldset>
+						<label for="Title">Title<span>required</span></label>
+						<select id="Title" name="Title">
+							<option value="324247">DR</option>
+							<option value="324246">MISS</option>
+							<option selected="selected" value="324243">MR</option>
+							<option value="324244">MRS</option>
+							<option value="324245">MS</option>
+						</select>
+	
+						<input type="text" maxlength="255" class="cat_textbox" id="FirstName" name="FirstName" />
+						<label for="FirstName">First Name<span>required</span></label>
+						
+						<input type="text" maxlength="255" class="cat_textbox" id="LastName" name="LastName" />
+						<label for="LastName">Last Name<span>required</span></label>
+						
+						<input type="text" maxlength="255" class="cat_textbox" id="EmailAddress" name="EmailAddress" />
+						<label for="EmailAddress">Email Address<span>required</span></label>
+					</fieldset>
+
+					<fieldset>
+						<textarea onkeydown="if(this.value.length&gt;=1024)this.value=this.value.substring(0,1023);" class="cat_listbox" rows="4" cols="10" id="CAT_Custom_144911" name="CAT_Custom_144911"></textarea>
+						<label for="CAT_Custom_144911">Message<span>required</span></label>
+					</fieldset>
+	
+					<fieldset>
+						<label>Verification <span>required</span></label>
+						{module_captchav2}
+					</fieldset>
+					
+					<div>
+						<input type="submit" value="Send" tabindex="5" id="submit" name="submit" class="light_button_send" />
+					</div>
+				</form>
+				
+				<script type="text/javascript">
+					//<![CDATA[
+					var submitcount56321 = 0;function checkWholeForm56321(theForm){var why = "";if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name");if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name"); if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value); if (theForm.CaptchaV2) why += captchaIsInvalid(theForm, "Enter Word Verification in box below", "Please enter the correct Word Verification as seen in the image"); if (theForm.CAT_Custom_144911) why += isEmpty(theForm.CAT_Custom_144911.value, "Message");if(why != ""){alert(why);return false;}if(submitcount56321 == 0){submitcount56321++;return true;}else{alert("Form submission is in progress.");return false;}}
+					//]]>
+				</script>
+			</div>
+			<!-- close #form -->
+			
+		</div>
+		<!-- close #contacts -->
+
+		<div id="right_sidebar" class="box_one_third last">
+			<span id="sidebar_top"></span>
+			<span id="sidebar_bottom"></span>
+			<div class="box">
+				<div>
+					<h3 class="label">Location</h3>
+				</div>
+				
+				<iframe width="270" height="270" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=ro&amp;geocode=&amp;q=adobe+systems,+san+francisco&amp;aq=&amp;sll=37.771529,-122.398467&amp;sspn=0.013501,0.027874&amp;ie=UTF8&amp;hq=adobe+systems,+san+francisco&amp;hnear=&amp;t=m&amp;ll=37.771529,-122.398467&amp;spn=0.013501,0.027874&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=ro&amp;geocode=&amp;q=adobe+systems,+san+francisco&amp;aq=&amp;sll=37.771529,-122.398467&amp;sspn=0.013501,0.027874&amp;ie=UTF8&amp;hq=adobe+systems,+san+francisco&amp;hnear=&amp;t=m&amp;ll=37.771529,-122.398467&amp;spn=0.013501,0.027874" style="color:#0000FF;text-align:left">View this map larger</a></small>
+			</div>
+
+			<div class="box">
+				<h3 class="label">Customize with HTML, CSS, JavaScript, Flash... the list goes on!</h3>
+				<p class="clear_margin">
+					<img alt="" class="alignleft" src="images/two.png" /> You can use any front-end technology you like - from Flash to JavaScript to CSS. In many ways, BC is like web hosting - anything you could do in terms of client side customization, you can do here. Plus, our modules and the code the system produces are completely XHTML friendly.
+				</p>
+			</div>
+		</div>
+		<!-- close #right_sidebar -->
+		
+	</div>
+	<!-- close .center -->
+	
+</div>
+<!-- close #main -->
+
+<!-- Header & Footer contained in template: Templates > Main Template.html -->

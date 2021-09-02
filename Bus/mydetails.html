@@ -1,0 +1,78 @@
+<!-- Header & Footer contained in template: Templates > Main Template.html -->
+
+<!--
+    This page uses modules. 
+    For a complete list of modules explained please visit
+    http://helpx.adobe.com/business-catalyst/kb/modules-quick-reference.html
+-->
+
+<div class="center over_all_under">
+	<div class="center breadcrumb">
+		<p><a href="/home">Home</a> / <a href="/membersarea">Members Area</a> / My Details</p>
+	</div>
+</div>
+
+<div class="wrap_fullwidth big_padding" id="intro">
+	<div class="center">
+		<h2 class="page_title line_back_ground">My Details</h2>
+		<p class="slogan"></p>
+	</div>
+</div>
+
+<br/><br/>
+
+<div class="wrap_fullwidth" id="main">
+	<div class="center">
+		<div class="box_fullwidth">
+			<br/>
+			<form class="form" name="catupdatedetailsformform70609" method="post" onsubmit="return checkWholeForm70609(this)" action="/MemberProcess.aspx">
+			    <table class="webform" cellspacing="0" cellpadding="2" border="0" style="width: 650px;">
+			        <tbody>
+			            <tr>
+			                <td><label for="FirstName">First Name</label><br/>
+			                <input type="text" name="FirstName" id="FirstName" value="{module_firstname}" class="cat_textbox" maxlength="255" /> </td>
+			            </tr>
+			            <tr>
+			                <td><label for="LastName">Last Name</label><br/>
+			                <input type="text" name="LastName" id="LastName" value="{module_lastname}" class="cat_textbox" maxlength="255" /> </td>
+			            </tr>
+			            <tr>
+			                <td><label for="EmailAddress">Email Address</label><br/>
+			                <input type="text" name="EmailAddress" id="EmailAddress" value="{module_emailaddress}" class="cat_textbox" maxlength="255" /></td>
+			            </tr>
+			            <tr>
+			                <td><label for="Username">Username</label><br/>
+			                <input type="text" name="Username" id="Username" value="{module_username}" class="cat_textbox" maxlength="255" /></td>
+			            </tr>
+			            <tr>
+			                <td><label for="Password">Password</label><br/>
+			                <input type="password" name="Password" id="Password" value="{module_password}" class="cat_textbox" maxlength="255" autocomplete="off" /></td>
+			            </tr>
+			            <tr>
+			                <td><label for="PasswordConfirm">Confirm Password</label><br/>
+			                <input type="password" name="PasswordConfirm" id="PasswordConfirm" value="{module_password}" class="cat_textbox" maxlength="255" autocomplete="off" /></td>
+			            </tr>
+			            <tr>
+			                <td style="padding-left: 175px;"><img name="catupdatedetailsform70609" src="/images/skin/button_save.png" alt="Submit" onclick="return checkWholeForm70609(document.catupdatedetailsformform70609);" style="float: left;" /> <a style="margin-left: 10px; float: left;" href="/membersarea"><img alt="" src="/images/skin/button_cancel.png" style="border-width: 0px;border-style: solid;" /></a></td>
+			            </tr>
+			        </tbody>
+			    </table>
+			    <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+			    <script type="text/javascript" src="/CatalystScripts/Java_DatePicker.js"></script>
+			    <script type="text/javascript">
+					//<![CDATA[
+					var submitcount70609 = 0;function checkWholeForm70609(theForm){var why = "";if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name");if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name"); if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value); if (theForm.Password && theForm.PasswordConfirm) { if (theForm.Password.value.length > 0 || theForm.PasswordConfirm.value.length > 0) { if (theForm.Password.value != theForm.PasswordConfirm.value) why += appendBreak("- Password and its confirmation do not match."); if (theForm.Password.value.length < 6) why += appendBreak("- Password must be 6 characters or longer."); }} if(why != ""){alert(why);return false;}if(submitcount70609 == 0){submitcount70609++;theForm.submit();return false;}else{alert("Form submission is in progress.");return false;}}
+					//]]>
+				</script>
+			</form>
+			<br/><br/>
+		</div>
+		<!-- close .box_fullwidth -->
+		
+	</div>
+	<!-- close .center -->
+	
+</div>
+<!-- close .wrap_fullwidth -->
+
+<!-- Header & Footer contained in template: Templates > Main Template.html -->

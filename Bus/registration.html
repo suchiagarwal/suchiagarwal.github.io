@@ -1,0 +1,62 @@
+
+<div class="center over_all_under">
+    <div class="center breadcrumb">
+        <p><a href="/home">Home</a> / Registration</p>
+    </div>
+</div>
+
+<div class="wrap_fullwidth big_padding" id="intro">
+    <div class="center">
+        <h2 class="page_title line_back_ground">Registration</h2>
+    </div>
+</div>
+
+<div class="wrap_fullwidth" id="main">
+    <div class="center">
+        <div class="box_fullwidth">
+            <br>
+            <br>
+
+            <form class="form" method="post" onsubmit="return checkWholeForm37504(this)" enctype="multipart/form-data" action="/FormProcessv2.aspx?WebFormID=32883&amp;OID={module_oid}&amp;OTYPE={module_otype}&amp;EID={module_eid}&amp;CID={module_cid}" id="catwebformform37504">
+                <table class="webform" cellspacing="0" cellpadding="2" border="0" style="width: 650px;">
+                    <tbody>
+                        <tr>
+                            <td><label for="FirstName">First Name <span class="req">required</span></label> <input type="text" name="FirstName" id="FirstName" class="cat_textbox" maxlength="255"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="LastName">Last Name <span class="req">required</span></label> <input type="text" name="LastName" id="LastName" class="cat_textbox" maxlength="255"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="EmailAddress">Email Address <span class="req">required</span></label> <input type="text" name="EmailAddress" id="EmailAddress" class="cat_textbox" maxlength="255"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Username">Username <span class="req">required</span></label> <input type="text" name="Username" id="Username" class="cat_textbox" maxlength="255"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Password">Password <span class="req">required</span></label> <input type="password" name="Password" id="Password" class="cat_textbox" maxlength="255" autocomplete="off"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="PasswordConfirm">Confirm Password <span class="req">required</span></label> <input type="password" name="PasswordConfirm" id="PasswordConfirm" class="cat_textbox" maxlength="255" autocomplete="off"></td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding-left: 180px;"><input class="light_button custom_button" type="submit" name="catwebform37504" onclick="return checkWholeForm37504(document.catwebformform37504);" value="register" style="width: 120px; float: left;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+                <script type="text/javascript">
+					//<![CDATA[
+	                var submitcount37504 = 0;function checkWholeForm37504(theForm){var why = "";if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name");if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name"); if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value); if (theForm.Username) why += isEmpty(theForm.Username.value, "Username"); if (theForm.Password && theForm.PasswordConfirm) { why += isEmpty(theForm.Password.value, "Password"); why += isEmpty(theForm.PasswordConfirm.value, "Confirm Password"); if (theForm.Password.value != theForm.PasswordConfirm.value) why += appendBreak("- Password and its confirmation do not match."); if (theForm.Password.value.length < 6) why += appendBreak("- Password must be 6 characters or longer."); } if(why != ""){alert(why);return false;}if(submitcount37504 == 0){submitcount37504++;theForm.submit();return false;}else{alert("Form submission is in progress.");return false;}}
+	                //]]>
+                </script>
+            </form>
+        </div>
+    </div>
+</div>
