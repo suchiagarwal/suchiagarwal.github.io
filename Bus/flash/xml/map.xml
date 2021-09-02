@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map>
+	<settings
+		file = "flash/animation.swf"
+		visibleAreaWidth = "270"
+		visibleAreaHeight = "200"
+		transitionType = "brightness"
+		transitionDuration = "1"
+		panSpeed = "20"
+	/>
+</map>
