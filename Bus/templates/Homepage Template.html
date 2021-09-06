@@ -1,0 +1,210 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <script src="//assets.adobedtm.com/launch-EN7517694390e04519af58abf736959c53-development.min.js"></script>
+        <!--
+		    This page uses modules and tags. 
+		    For a complete list of modules explained please visit
+			http://helpx.adobe.com/business-catalyst/kb/modules-quick-reference.html
+			
+			For a complete list of tags explained please visit
+			http://helpx.adobe.com/business-catalyst/kb/tags---quick-reference.html
+		-->
+        <!-- Basic Page Needs
+		================================================== -->
+        <meta charset="utf-8" />
+        <title>Page title</title>
+        <!-- FONTS
+		================================================== -->
+        <script src="//use.edgefonts.net/open-sans.js"></script>
+        <!-- CSS
+		================================================== -->
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/jscript/prettyPhoto/css/prettyPhoto.css" />
+        <!-- JS
+		================================================== -->
+        <script src="/jscript/jquery.min.js"></script>
+        <script src="/jscript/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+        <script src="/jscript/easing.js"></script>
+        <script src="/jscript/slider.js"></script>
+    </head>
+    <body>
+        <div id="top" class="wrap_fullwidth">
+        <div class="center over_all">
+        <div id="nav" class="wrap_content">
+        <div id="logo">
+        <h1 class="logo"><a href="/">CADAC</a></h1>
+        </div>
+        <div class="menu_wrapper">
+        <div id="menu">
+        {module_menu,14623} <!-- Edit this menu from Site Manager > Menus > Main Menu -->
+        </div>
+        <div id="options_menu">
+        <ul>
+            <li class="search"><img alt="" src="/images/skin/search_icon.png" /></li>
+            <li class="login"><img alt="" src="/images/skin/login_icon.png" /></li>
+            <li class="feed">
+            <a href="/RSSRetrieve.aspx?ID=5007&amp;Type=RSS20" target="_blank"><img alt="" src="/images/skin/feed_icon.png" /></a>
+            </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <!-- close #nav -->
+        <div id="options_wrapper">
+        <div id="search">
+        <form action="/Default.aspx?SiteSearchID=725&amp;PageID=5454999" method="post" name="catsearchform23116">
+            <p>
+            <input type="text" value="Search..." id="CAT_Search" name="CAT_Search" class="input_search" />
+            <input type="submit" id="btn_search" name="btn_search" value=" " class="button_search" />
+            </p>
+        </form>
+        </div>
+        <div id="login"></div>
+        <script language="Javascript">
+						if ({module_isloggedin}==1) {
+							document.getElementById("login").innerHTML = 'Welcome <a href="/membersarea"><strong>{module_fullname}</strong></a> | {module_logout}';
+							jQuery("#login").addClass("login2");
+						} else {
+							document.getElementById("login").innerHTML = ' <form name="catseczoneform46644" onsubmit="return checkWholeForm46644(this)" method="post" action="/ZoneProcess.aspx?ZoneID=51&amp;OID={module_oid}&amp;OTYPE={module_otype}"><p><input type="text" class="cat_textbox_small" name="Username" value="Username" id="SZUsername" maxlength="255" /><input type="password" class="cat_textbox_small" name="Password" id="SZPassword" maxlength="255" value="Password" autocomplete="off" /><a href="/registration" class="button_register"></a><input type="submit" onclick="javascript:document.catseczoneform46644.submit();" value=" " id="btn_login" name="btn_login" class="button_login" /></p></form>';
+							jQuery("#login").removeClass("login2");
+						}
+					</script>
+        <script src="/CatalystScripts/ValidationFunctions.js"></script>
+        <script type="text/javascript">
+						//<![CDATA[
+						function checkWholeForm46644(theForm){var why = "";if (theForm.Username) why += isEmpty(theForm.Username.value, "Username");if (theForm.Password) why += isEmpty(theForm.Password.value, "Password");if (why != ""){alert(why);return false;}theForm.submit();return false;}
+						//]]>
+					</script>
+        </div>
+        <!-- close #options_wrapper -->
+        </div>
+        </div>
+        <!-- close #top -->
+        <!-- Homepage Slider -->
+        <div class="center over_all_under">
+        <div style="margin-left: -10px;" id="featured" class="center">
+        <div class="big_gallery full_shadow">
+        <span class="gallery_button_next"><img alt="" src="images/skin/button_next.png" /></span> <span class="gallery_button_prev"><img alt="" src="images/skin/button_prev.png" /></span>
+        <div class="gallery_items">
+        <div class="item info current">
+        <a href="/page"><img alt="" src="images/portfolio/full/09.jpg" /></a>
+        </div>
+        <!-- close .item -->
+        <div class="item">
+        <div class="description description_left">
+        <h2><a href="/page">An Online Store Out of the Box</a></h2>
+        <div class="alignleft thumb_shadow">
+        <a rel="prettyPhoto[one]" href="http://www.youtube.com/watch?v=qVWiL7yzIvI"><img alt="" class="border light_border" src="images/portfolio/thumbs/03.jpg" /></a>
+        </div>
+        <p>Selling goods and services is often an important part of an Online Business. With BC, we've got eCommerce capabilities built right into the platform, so that you can avoid the pain of custom coding and fiddly configuration.</p>
+        <a class="light_button" href="#">Read More</a>
+        </div>
+        <div class="image alignleft"><img alt="" src="images/portfolio/full/08.jpg" /></div>
+        </div>
+        <!-- close .item -->
+        <div class="item">
+        <div class="description description_right">
+        <h2><a href="/page">Drive Repeat Sales With Email Marketing</a></h2>
+        <div class="alignright thumb_shadow">
+        <a rel="prettyPhoto[two]" href="http://www.youtube.com/watch?v=oJIln532PLA"><img alt="" class="border light_border" src="images/portfolio/thumbs/02.jpg" /></a>
+        </div>
+        <p>Email marketing is a powerful tool for your clients to reach their customers - and bring them back to their online business. With BC's simple CRM automatically building their customer database in the background, clients can create lists and send newsletters with ease.</p>
+        <a class="light_button" href="/page">Read More</a>
+        </div>
+        <div class="image alignright"><img alt="" src="images/portfolio/full/03.jpg" /></div>
+        </div>
+        <!-- close .item -->
+        <div class="item">
+        <div class="description over">
+        <div class="title">
+        <h2><a href="/page">Powerful Modules - Built In</a></h2>
+        </div>
+        <div class="caption">
+        <p>Every Online Business has different needs and goals. BC's range of flexible modules provide you with quick ways to implement usually complex business requirements, without plug-ins or coding tasks. <a rel="prettyPhoto[three]" href="http://www.youtube.com/watch?v=qVWiL7yzIvI">Watch Video</a></p>
+        </div>
+        </div>
+        <a href="/page"><img alt="" src="images/portfolio/full/01.jpg" /></a>
+        </div>
+        <!-- close .item -->
+        <div class="item">
+        <a href="/page"><img alt="" src="images/portfolio/full/05.jpg" /></a>
+        </div>
+        <!-- close .item -->
+        <div class="item">
+        <a href="/page"><img alt="" src="images/portfolio/full/07.jpg" /></a>
+        </div>
+        <!-- close .item -->
+        <div class="item">
+        <a href="/page"><img alt="" src="images/portfolio/full/06.jpg" /></a>
+        </div>
+        <!-- close .item -->
+        </div>
+        <!-- close .gallery_items -->
+        <div class="gallery_navigation">
+        <div class="gallery_navigation_center">
+        <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> <span class="button_play_pause"><img alt="" src="images/skin/button_pause.png" /></span>
+        </div>
+        </div>
+        <!-- close .gallery_navigation -->
+        </div>
+        <!-- close .big_gallery -->
+        </div>
+        </div>
+        <!-- close #featured -->
+        <!-- close Homepage Slider -->
+        {tag_pagecontent}
+        <!-- This tag loads the page in this template -->
+        <!-- For a complete list of tags explained visit http://helpx.adobe.com/business-catalyst/kb/tags---quick-reference.html -->
+        <div id="pre_footer_back_ground" class="wrap_fullwidth">
+        <div class="center">
+        <div id="pre_footer">
+        <div class="box_one_third">
+        <h4 class="heading">Featured Posts</h4>
+        {module_blogsitesummary,4020,3}
+        </div>
+        <!-- close .box_one_third -->
+        <div class="box_one_third">
+        <h4 class="heading">Latest News</h4>
+        {module_announcement,l,4,,,}
+        </div>
+        <!-- close .box_one_third -->
+        <div class="box_one_third last">
+        <div id="footer_form">
+        <h4 class="heading">Newsletter</h4>
+        <form id="newsletter_form" name="catemaillistform85379" onsubmit="return checkWholeForm85379(this)" method="post" action="CampaignProcess.aspx?ListID=23748">
+            <fieldset>
+            <input class="cat_textbox_small" type="text" name="FullName" id="CLFullName" value="Full name" maxlength="255" />
+            <input class="cat_textbox_small" type="text" name="EmailAddress" id="CLEmailAddress" value="E-mail address" maxlength="255" />
+            </fieldset>
+            {module_captchav2}
+            <div><img src="/images/skin/button_subscribe2.png" alt="Submit" onclick="return checkWholeForm85379(document.catemaillistform85379);" /> </div>
+            <script src="/CatalystScripts/ValidationFunctions.js"></script>
+            <script type="text/javascript">
+									//<![CDATA[
+									function checkWholeForm85379(theForm){var why = "";if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);if (theForm.CaptchaV2) why += isEmpty(theForm.CaptchaV2.value, "Enter Word Verification in box below"); if (why != ""){alert(why);return false;}theForm.submit();return false;}
+									//]]>
+								</script>
+        </form>
+        </div>
+        </div>
+        <!-- close .box_one_third last -->
+        </div>
+        </div>
+        </div>
+        <!-- close #pre_footer_back_ground -->
+        <div id="footer_back_ground" class="wrap_fullwidth">
+        <div class="center">
+        <div id="footer">
+        {module_menu,614799} <!-- Edit this menu from Site Manager > Menus > Main Menu - footer -->
+        <ul class="networks">
+            <li><a href="http://twitter.com/#!/adobebc" target="_blank"><img alt="Twitter" src="/images/network_icons/twitter.png" /></a></li>
+            <li><a href="http://www.facebook.com/adobebc" target="_blank"><img alt="Facebook" src="/images/network_icons/facebook.png" /></a></li>
+        </ul>
+        <p class="copyright"> &copy; Company Name | <a title="top" href="#top">top</a></p>
+        </div>
+        </div>
+        </div>
+        <!-- close #footer_back_ground -->
+        <script type="text/javascript">_satellite.pageBottom();</script>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <script src="//assets.adobedtm.com/launch-EN7517694390e04519af58abf736959c53-development.min.js"></script>
+        <!--
+		    This page uses modules and tags. 
+		    For a complete list of modules explained please visit
+			http://helpx.adobe.com/business-catalyst/kb/modules-quick-reference.html
+			
+			For a complete list of tags explained please visit
+			http://helpx.adobe.com/business-catalyst/kb/tags---quick-reference.html
+		-->
+        <!-- Basic Page Needs
+		================================================== -->
+        <meta charset="utf-8" />
+        <title>Page title</title>
+        <!-- FONTS
+		================================================== -->
+        <script src="//use.edgefonts.net/open-sans.js"></script>
+        <!-- CSS
+		================================================== -->
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/jscript/prettyPhoto/css/prettyPhoto.css" />
+        <!-- JS
+		================================================== -->
+        <script src="/jscript/jquery.min.js"></script>
+        <script src="/jscript/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+        <script src="/jscript/easing.js"></script>
+        <script src="/jscript/slider.js"></script>
+    </head>
+    <body>
+        <div id="top" class="wrap_fullwidth">
+        <div class="center over_all">
+        <div id="nav" class="wrap_content">
+        <div id="logo">
+        <h1 class="logo"><a href="/">CADAC</a></h1>
+        </div>
+        <div class="menu_wrapper">
+        <div id="menu">
+        {module_menu,14623} <!-- Edit this menu from Site Manager > Menus > Main Menu -->
+        </div>
+        <div id="options_menu">
+        <ul>
+            <li class="search"><img alt="" src="/images/skin/search_icon.png" /></li>
+            <li class="login"><img alt="" src="/images/skin/login_icon.png" /></li>
+            <li class="feed">
+            <a href="/RSSRetrieve.aspx?ID=5007&amp;Type=RSS20" target="_blank"><img alt="" src="/images/skin/feed_icon.png" /></a>
+            </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <!-- close #nav -->
+        <div id="options_wrapper">
+        <div id="search">
+        <form action="/Default.aspx?SiteSearchID=725&amp;PageID=5454999" method="post" name="catsearchform23116">
+            <p>
+            <input type="text" value="Search..." id="CAT_Search" name="CAT_Search" class="input_search" />
+            <input type="submit" id="btn_search" name="btn_search" value=" " class="button_search" />
+            </p>
+        </form>
+        </div>
+        <div id="login"></div>
+        <script language="Javascript">
+						if ({module_isloggedin}==1) {
+							document.getElementById("login").innerHTML = 'Welcome <a href="/membersarea"><strong>{module_fullname}</strong></a> | {module_logout}';
+							jQuery("#login").addClass("login2");
+						} else {
+							document.getElementById("login").innerHTML = ' <form name="catseczoneform46644" onsubmit="return checkWholeForm46644(this)" method="post" action="/ZoneProcess.aspx?ZoneID=51&amp;OID={module_oid}&amp;OTYPE={module_otype}"><p><input type="text" class="cat_textbox_small" name="Username" value="Username" id="SZUsername" maxlength="255" /><input type="password" class="cat_textbox_small" name="Password" id="SZPassword" maxlength="255" value="Password" autocomplete="off"/><a href="/registration" class="button_register"></a><input type="submit" onclick="javascript:document.catseczoneform46644.submit();" value=" " id="btn_login" name="btn_login" class="button_login" /></p></form>';
+							jQuery("#login").removeClass("login2");
+						}
+					</script>
+        <script src="/CatalystScripts/ValidationFunctions.js"></script>
+        <script type="text/javascript">
+						//<![CDATA[
+						function checkWholeForm46644(theForm){var why = "";if (theForm.Username) why += isEmpty(theForm.Username.value, "Username");if (theForm.Password) why += isEmpty(theForm.Password.value, "Password");if (why != ""){alert(why);return false;}theForm.submit();return false;}
+						//]]>
+					</script>
+        </div>
+        <!-- close #options_wrapper -->
+        </div>
+        </div>
+        <!-- close #top -->
+        {tag_pagecontent}
+        <!-- This tag loads the page in this template -->
+        <!-- For a complete list of tags explained visit http://helpx.adobe.com/business-catalyst/kb/tags---quick-reference.html -->
+        <div id="pre_footer_back_ground" class="wrap_fullwidth">
+        <div class="center">
+        <div id="pre_footer">
+        <div class="box_one_third">
+        <h4 class="heading">Featured Posts</h4>
+        {module_blogsitesummary,4020,3}
+        </div>
+        <!-- close .box_one_third -->
+        <div class="box_one_third">
+        <h4 class="heading">Latest News</h4>
+        {module_announcement,l,4,,,}
+        </div>
+        <!-- close .box_one_third -->
+        <div class="box_one_third last">
+        <div id="footer_form">
+        <h4 class="heading">Newsletter</h4>
+        <form id="newsletter_form" name="catemaillistform85379" onsubmit="return checkWholeForm85379(this)" method="post" action="CampaignProcess.aspx?ListID=23748">
+            <fieldset>
+            <input class="cat_textbox_small" type="text" name="FullName" id="CLFullName" value="Full name" maxlength="255" />
+            <input class="cat_textbox_small" type="text" name="EmailAddress" id="CLEmailAddress" value="E-mail address" maxlength="255" />
+            </fieldset>
+            {module_captchav2}
+            <div><img src="/images/skin/button_subscribe2.png" alt="Submit" onclick="return checkWholeForm85379(document.catemaillistform85379);" /></div>
+            <script src="/CatalystScripts/ValidationFunctions.js"></script>
+            <script type="text/javascript">
+									//<![CDATA[
+									function checkWholeForm85379(theForm){var why = "";if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);if (theForm.CaptchaV2) why += isEmpty(theForm.CaptchaV2.value, "Enter Word Verification in box below"); if (why != ""){alert(why);return false;}theForm.submit();return false;}
+									//]]>
+								</script>
+        </form>
+        </div>
+        </div>
+        <!-- close .box_one_third last -->
+        </div>
+        </div>
+        </div>
+        <!-- close #pre_footer_back_ground -->
+        <div id="footer_back_ground" class="wrap_fullwidth">
+        <div class="center">
+        <div id="footer">
+        {module_menu,614799} <!-- Edit this menu from Site Manager > Menus > Main Menu - footer -->
+        <ul class="networks">
+            <li><a href="http://twitter.com/#!/adobebc" target="_blank"><img alt="Twitter" src="/images/network_icons/twitter.png" /></a></li>
+            <li><a href="http://www.facebook.com/adobebc" target="_blank"><img alt="Facebook" src="/images/network_icons/facebook.png" /></a></li>
+        </ul>
+        <p class="copyright"> &copy; Company Name | <a title="top" href="#top">top</a></p>
+        </div>
+        </div>
+        </div>
+        <!-- close #footer_back_ground -->
+        <script type="text/javascript">_satellite.pageBottom();</script>
+    </body>
+</html>
