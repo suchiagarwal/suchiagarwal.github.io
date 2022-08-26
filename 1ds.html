@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://wedcs.azurewebsites.net/1dstest.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script src="./1dstest_files/jquery-3.3.1.min.js.download"></script>
+<!-- Meta tags for testing
+<meta name="awa-market" content="en-meta">
+<meta name="awa-env" content="metaEnv">
+<meta name="awa-pageType" content="metaPageType">
+<meta name="awa-product" content="metaProduct">
+<meta name="awa-serverImpressionGuid" content="Meta1234">
+<meta name="awa-env" content="MetaENV">
+<meta name="awa-isSensitive" content="MetaNo"> 
+-->
+
+<meta name="awa-behavior" content="VIEWPDP"> 
+
+<!-- 1DS --> 
+<script type="text/javascript" src="./1dstest_files/ms.analytics-web-3.min.js.download"></script>
+<script type="text/javascript">
+const analytics = new oneDS.ApplicationInsights();
+var config = {
+  instrumentationKey: "90e1023031bf48949e5f9d3d70198a40-6f94a0b4-be26-45a4-a579-7bf41ccb4aca-7070",
+  channelConfiguration:{ // Post channel configuration
+      eventsLimitInMem: 50
+  },
+  propertyConfiguration: { // Properties Plugin configuration
+	  env:"PPE"
+  },
+  webAnalyticsConfiguration:{ // Web Analytics Plugin configuration
+	  //syncMuid:true,
+	  urlCollectHash:true,
+	  urlCollectQuery:true,
+	  coreData: {
+	  market:"en-us",
+	  pageTags:{
+	  			 DAPSampledUser:"true",
+				 pgtag:"pgtag_test_from_suchi_github_page",
+				 orderInfo:
+				 {lnItms:
+					{
+				 affirmationId:"affirmationid_from_suchi_github_page",
+						}
+				 }
+
+
+			}
+	  }
+  }
+};
+//Initialize SDK
+analytics.initialize(config, []);
+</script>
+</head>
+<body>
+<h1>1DS Test Page</h1>
+<br>
+Example(s) to show Page Actions:<br>
+<button type="button" id="DNT" data-bi-dnt=""> DNT </button><br>
+<button type="button" id="MTO" data-bi-mto=""> MTO </button><br>
+<button type="button" id="buttonID" data-bi-bhvr="PROCESSCHECKPOINT">Button</button><br>
+<a href="https://wedcs.azurewebsites.net/1dstest.html" id="Anchor">Anchor</a><br>
+<br>
+<input type="radio" name="RadioName" value="RadioValue"> 
+<br>
+<button type="button" id="buttonID" data-bi-name="Long-Data-Name" data-bi-id="ID" data-bi-area="Long-Area-Name" data-bi-slot="Long-Slot" data-bi-bhvr="PROCESSCHECKPOINT">data-bi-long</button><br>
+<button type="button" id="buttonID" data-bi-cn="Short-cN" data-bi-id="ID" data-bi-an="short-aN" data-bi-sn="short-sN">data-bi-Short</button><br>
+
+
+<a data-bi-cn="Short-Data-Name" data-m="{&quot;cN&quot;:&quot;SHOP NOW&quot;,&quot;cT&quot;:&quot;0&quot;,&quot;id&quot;:&quot;n2c6m1r2a2&quot;,&quot;sN&quot;:2,&quot;aN&quot;:&quot;c6m1r2a2&quot;,&quot;assetid&quot;:&quot;SSAGPTSS_101547_56793_160_a&quot;,&quot;tags&quot;:{&quot;ms.linkid&quot;:&quot;SSAGPTSS_101547_56793_160_a&quot;}}" href="https://www.microsoft.com/en-us/p/surface-pro-6-type-cover/8VVGCGKPSWS0/000R?icid=_MSCOM_BTS20_LaborDayBlock">
+                <span>data-m</span>
+            </a>
+
+
+</body></html>
